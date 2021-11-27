@@ -1,0 +1,16 @@
+ALGORITHM insertion_sort
+VAR arr : ARRAY_OF INTEGER[n];
+    var i,j,a INTEGER
+    
+BEGIN
+   
+    FOR i FROM 1 TO n STEP 1  DO
+        j = i-1
+        arr[i] := a ;
+        WHILE (arr[j]<arr[i]) DO
+            arr[j+1] := arr[j];
+            j=j-1
+        END_WHILE 
+        arr[j+1] := a       
+    END_FOR    
+END
